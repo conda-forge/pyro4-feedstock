@@ -25,12 +25,12 @@ requirements:
     - python
     - setuptools
     - serpent >=1.11
-    - vs2015_runtime 14.00.23026.0 0 # [win and py35]
+    - vs2015_runtime 14.00.23026.0 0  # [win and py35]
 
   run:
     - python
     - serpent >=1.11
-    - vs2015_runtime 14.00.23026.0 0 # [win and py35]
+    - vs2015_runtime 14.00.23026.0 0  # [win and py35]
 
 test:
   imports:
