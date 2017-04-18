@@ -1,4 +1,4 @@
-{% set version = "4.43" %}
+{% set version = "4.59" %}
 
 package:
   name: pyro4
@@ -7,16 +7,16 @@ package:
 source:
   fn: Pyro4-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/P/Pyro4/Pyro4-{{ version }}.tar.gz
-  md5: 5c094edfdd465ed52fdf9b2a4f806f74
+  sha256: 6a39dadbd2a83b6fd5ab7f5402f8a4befd467b5c0404b8610a8797f748b72a38
 
 build:
-  number: 2
+  number: 1
   script: python setup.py install --single-version-externally-managed --record record.txt
   entry_points:
     - pyro4-ns = Pyro4.naming:main
     - pyro4-nsc = Pyro4.nsc:main
     - pyro4-test-echoserver = Pyro4.test.echoserver:main
-    - pyro4-check-config = Pyro4.configuration:configuration_dump
+    - pyro4-check-config = Pyro4.configuration:main
     - pyro4-flameserver = Pyro4.utils.flameserver:main
     - pyro4-httpgateway = Pyro4.utils.httpgateway:main
 
@@ -24,11 +24,11 @@ requirements:
   build:
     - python
     - setuptools
-    - serpent >=1.11
+    - serpent >=1.19
 
   run:
     - python
-    - serpent >=1.11
+    - serpent >=1.19
 
 test:
   imports:
