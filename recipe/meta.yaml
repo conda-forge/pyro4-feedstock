@@ -1,4 +1,4 @@
-{% set version = "4.58" %}
+{% set version = "4.59" %}
 
 package:
   name: pyro4
@@ -7,10 +7,10 @@ package:
 source:
   fn: Pyro4-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/P/Pyro4/Pyro4-{{ version }}.tar.gz
-  sha256: 2c6d133bcec6039a681475bc878ec98c598ccd33105c1994c7b5217932ee2c0c
+  sha256: 6a39dadbd2a83b6fd5ab7f5402f8a4befd467b5c0404b8610a8797f748b72a38
 
 build:
-  number: 1
+  number: 0
   script: python setup.py install --single-version-externally-managed --record record.txt
   entry_points:
     - pyro4-ns = Pyro4.naming:main
