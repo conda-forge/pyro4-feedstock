@@ -1,7 +1,7 @@
 About pyro4
 ===========
 
-Home: http://pythonhosted.org/Pyro4/
+Home: https://pyro4.readthedocs.io
 
 Package license: MIT
 

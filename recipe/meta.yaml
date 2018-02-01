@@ -46,7 +46,7 @@ test:
     - pyro4-httpgateway --help
 
 about:
-  home: http://pythonhosted.org/Pyro4/
+  home: https://pyro4.readthedocs.io
   license: MIT
   summary: 'Distributed object middleware for Python (RPC)'
 
