@@ -10,8 +10,9 @@ source:
   sha256: 536b07a097d0619e7ab1effa3747fda177a24168d17a07a93ca9ac30977608f7
 
 build:
-  number: 1
-  script: python setup.py install --single-version-externally-managed --record record.txt
+  noarch: python
+  number: 2
+  script: python -m pip install --no-deps --ignore-installed .
   entry_points:
     - pyro4-ns = Pyro4.naming:main
     - pyro4-nsc = Pyro4.nsc:main
@@ -21,7 +22,8 @@ build:
     - pyro4-httpgateway = Pyro4.utils.httpgateway:main
 
 requirements:
-  build:
+  host:
+    - pip
     - python
     - setuptools
     - serpent >=1.23
