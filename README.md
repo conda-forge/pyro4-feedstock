@@ -14,14 +14,15 @@ Summary: Distributed object middleware for Python (RPC)
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/pyro4-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/pyro4-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/pyro4-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/pyro4-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/pyro4-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/pyro4-feedstock/branch/master)
+All platforms:
+[![noarch](https://img.shields.io/circleci/project/github/conda-forge/pyro4-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/pyro4-feedstock)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/pyro4/badges/version.svg)](https://anaconda.org/conda-forge/pyro4)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/pyro4/badges/downloads.svg)](https://anaconda.org/conda-forge/pyro4)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-pyro4-green.svg)](https://anaconda.org/conda-forge/pyro4) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/pyro4.svg)](https://anaconda.org/conda-forge/pyro4) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/pyro4.svg)](https://anaconda.org/conda-forge/pyro4) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/pyro4.svg)](https://anaconda.org/conda-forge/pyro4) |
 
 Installing pyro4
 ================
