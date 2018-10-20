@@ -1,4 +1,4 @@
-{% set version = "4.73" %}
+{% set version = "4.74" %}
 
 package:
   name: pyro4
@@ -7,7 +7,7 @@ package:
 source:
   fn: Pyro4-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/P/Pyro4/Pyro4-{{ version }}.tar.gz
-  sha256: 536b07a097d0619e7ab1effa3747fda177a24168d17a07a93ca9ac30977608f7
+  sha256: 89ed7b12c162e5124f322f992f9506c44f5e1a379926cf01ee73ef810d3bf75f
 
 build:
   number: 2
@@ -26,11 +26,11 @@ requirements:
     - pip
     - python
     - setuptools
-    - serpent >=1.24
+    - serpent >=1.27
 
   run:
     - python
-    - serpent >=1.24
+    - serpent >=1.27
 
 test:
   imports:
