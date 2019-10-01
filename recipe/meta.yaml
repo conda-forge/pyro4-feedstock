@@ -1,4 +1,4 @@
-{% set version = "4.76" %}
+{% set version = "4.77" %}
 
 package:
   name: pyro4
@@ -7,12 +7,12 @@ package:
 source:
   fn: Pyro4-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/P/Pyro4/Pyro4-{{ version }}.tar.gz
-  sha256: ac1fda8d3fd9b5ff2cb8e7e400f95a1b1ae28c5df1aa82d1833a5a898e476334
+  sha256: 2bfe12a22f396474b0e57c898c7e2c561a8f850bf2055d8cf0f7119f0c7a523f
 
 build:
   number: 0
   noarch: python
-  script: python -m pip install --no-deps --ignore-installed .
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
   entry_points:
     - pyro4-ns = Pyro4.naming:main
     - pyro4-nsc = Pyro4.nsc:main
