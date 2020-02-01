@@ -1,4 +1,4 @@
-{% set version = "4.77" %}
+{% set version = "4.78" %}
 
 package:
   name: pyro4
@@ -7,7 +7,7 @@ package:
 source:
   fn: Pyro4-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/P/Pyro4/Pyro4-{{ version }}.tar.gz
-  sha256: 2bfe12a22f396474b0e57c898c7e2c561a8f850bf2055d8cf0f7119f0c7a523f
+  sha256: b69200747c4c69bfa6fa8b917806b0a9ee7939daaf67ab9bb5ccac7e5179feee
 
 build:
   number: 0
@@ -50,6 +50,7 @@ test:
 about:
   home: https://pyro4.readthedocs.io
   license: MIT
+  license_file: LICENSE
   summary: 'Distributed object middleware for Python (RPC)'
 
 extra:
