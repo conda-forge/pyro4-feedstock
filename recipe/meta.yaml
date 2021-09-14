@@ -24,12 +24,12 @@ build:
 requirements:
   host:
     - pip
-    - python>=2.7
+    - python >=2.7
     - setuptools
     - serpent >=1.27
 
   run:
-    - python>=2.7
+    - python >=2.7
     - serpent >=1.27
 
 test:
