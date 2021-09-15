@@ -1,4 +1,4 @@
-{% set version = "4.80" %}
+{% set version = "4.81" %}
 
 package:
   name: pyro4
@@ -7,7 +7,7 @@ package:
 source:
   fn: Pyro4-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/P/Pyro4/Pyro4-{{ version }}.tar.gz
-  sha256: 46847ca703de3f483fbd0b2d22622f36eff03e6ef7ec7704d4ecaa3964cb2220
+  sha256: e130da06478b813173b959f7013d134865e07fbf58cc5f1a2598f99479cdac5f
 
 build:
   number: 0
