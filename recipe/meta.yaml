@@ -6,11 +6,11 @@ package:
 
 source:
   fn: Pyro4-{{ version }}.tar.gz
-  url: https://pypi.io/packages/source/P/Pyro4/Pyro4-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/P/Pyro4/Pyro4-{{ version }}.tar.gz
   sha256: 511f5b0804e92dd77dc33adf9c947787e3f9e9c5a96b12162f0557a7c4ce21fb
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . --no-deps -vv
   entry_points:
@@ -24,15 +24,17 @@ build:
 requirements:
   host:
     - pip
-    - python >=2.7
+    - python {{ python_min }}
     - setuptools
     - serpent >=1.27
 
   run:
-    - python >=2.7
+    - python >={{ python_min }}
     - serpent >=1.27
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - Pyro4
     - Pyro4.socketserver
